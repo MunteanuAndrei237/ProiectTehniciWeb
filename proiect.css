@@ -1,0 +1,229 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    margin: 0px;
+    font-size: x-large;
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: black;
+}
+
+header {
+    margin: 0px;
+    height: fit-content;
+}
+
+#headbar {
+    top: 0px;
+    align-self: flex-start;
+    display: flex;
+    height: 10vh;
+    width: 99vw;
+    background-color: black;
+    justify-content: left;
+    gap: 30%;
+}
+
+#title1 {
+    display: flex;
+    position: relative;
+    color: wheat;
+    font-size: 200%;
+}
+
+#menuicon {
+    display: flex;
+    position: relative;
+    height: 100%;
+    left: 4%;
+    cursor: pointer;
+}
+
+#dropdownmenu {
+    display: none;
+    position: absolute;
+    top: 10vh;
+    width: 25vw;
+    height: 20vh;
+    background-color: azure;
+    flex-direction: column;
+    z-index: 99;
+}
+
+.menuelem {
+    border: 1px solid;
+    margin: 1px;
+    border-color: black;
+    transition: font-size 1s;
+}
+
+.menuelem:hover {
+    font-size: xx-large;
+}
+
+#menuicon:hover+#dropdownmenu {
+    display: flex;
+}
+
+#dropdownmenu:hover {
+    display: flex;
+}
+
+#animationcontent {
+    width: 5%;
+    height: 75%;
+    margin: 0.6%;
+}
+
+#animationsquare1 {
+    position: relative;
+    width: 20%;
+    padding-bottom: 20%;
+    background-color: red;
+    animation-name: anim1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+#animationsquare2 {
+    position: relative;
+    width: 20%;
+    padding-bottom: 20%;
+    background-color: blue;
+    animation-name: anim2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anim1 {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        background-color: yellow;
+        left: 75%;
+        top: 0px;
+    }
+
+    50% {
+        background-color: blue;
+        left: 75%;
+        top: 75%;
+    }
+
+    75% {
+        background-color: green;
+        left: 0px;
+        top: 75%;
+    }
+
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+@keyframes anim2 {
+    0% {
+        background-color: blue;
+        left: 75%;
+        top: 55%;
+    }
+
+    25% {
+        background-color: green;
+        left: 0px;
+        top: 55%;
+    }
+
+    50% {
+        background-color: red;
+        left: 0px;
+        top: -25%;
+    }
+
+    75% {
+        background-color: yellow;
+        left: 75%;
+        top: -25%;
+    }
+
+    100% {
+        background-color: blue;
+        left: 75%;
+        top: 55%;
+    }
+}
+
+section {
+    margin: 0.7%;
+    border: 3px solid rgb(183, 238, 238);
+    background-color: azure;
+    text-align: justify;
+    display: flex;
+    opacity: 0.9;
+}
+
+img {
+    aspect-ratio: 1/1 !important;
+    float: left;
+    margin: 1%;
+    object-fit: contain;
+    height: fit-content;
+}
+
+#scene1 {
+    float: right;
+}
+
+p {
+    text-align: justify;
+}
+
+#cahracterstable {
+    display: flex;
+    gap: 2%;
+    align-items: center;
+    align-content: center;
+}
+
+#section2 {
+    display: flex;
+    flex-direction: column;
+}
+
+#section3 {
+    display: inherit;
+}
+
+figure {
+    display: inline-block;
+    text-align: center;
+    margin: 5px;
+    align-self: center;
+}
+
+iframe {
+    margin: 1%;
+    height: 28vh;
+}
+
+a {
+    all: unset;
+    cursor: pointer;
+}
+
+#photoscontainer {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 5%;
+    justify-content: center;
+}
